@@ -1,13 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 
 int main(void)
-	{
-	char i;
+{
+	char lowAlphaRev;
 
-	for (i = 'Z'; i >= 'A'; i--);
+	for (lowAlphaRev = 'z'; lowAlphaRev >= 'a'; lowAlphaRev--)
 	{
-		putchar("%c", i);
+		putchar(lowAlphaRev);
 	}
-		putchar('\n');
-		return (0);
-	}
+
+	putchar('\n');
+
+	return (0);
+}
