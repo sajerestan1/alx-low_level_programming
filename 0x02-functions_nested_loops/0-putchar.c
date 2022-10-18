@@ -1,17 +1,20 @@
-#include "main.h"
+#include "holberton.h"
 /**
- * main - prints _putchar, fllowd by a new linees
- * Return: Alwys 0 (Success)
+ * main - Entry point
+ * Description: prints 'Holberton \n'
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	char abe[] = "_putchar";
+char str[] = "Holberton\n";
+int i = 0;
 
-	int c;
-
-	for (c = 0; c < 8; c++)
+while (str[i] != '\0')
 	{
-		_putchar(abe[c]);
+	char c = str[i];
+
+	_putchar(c);
+	i++;
 	}
-	_putchar('\n');
-	return (0);
+return (0);
+}
