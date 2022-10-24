@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_rev - print a string in reverse
- * @s: argument to the function
- * Description: return the required result
- * Return: return void
- */
+* print_rev - print a string in reverse
+* @s: argument to the function
+* Description: return the required result
+* Return: return void
+*/
 
 void print_rev(char *s)
 {
