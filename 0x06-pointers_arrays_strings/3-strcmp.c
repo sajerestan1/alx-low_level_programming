@@ -1,5 +1,5 @@
 
-	#include "main.h"
+#include "main.h"
 /**
 *_strcmp - compares two strings, this good to add
 *@s1: A pointer to a character that will be changed
