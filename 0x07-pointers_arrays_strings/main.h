@@ -1,21 +1,26 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
+
 /**
-*_memset - The _memset() function fills
-* the first n bytes of the memory area
-* pointed to by s with the constant byte b
-*@s:target
-*@b: constant byte
-*@n:number of byte
-*Return: returns new value of target
+*Description - contains all the prototypes to work with
+*File: main.h
+*used in the 0x06-pointers_arrays_strings directory.
+*c: this is c member
+*Return: 0 if successful, else 1 on error
+*@c: character set
 */
+#include <stddef.h>
+int _putchar(char c);
+void *_memset(void *s, int c, size_t n);
+char *_memcpy(char *dest, char *src, unsigned int n);
+char *_strchr(char *s, char c);
+unsigned int _strspn(char *s, char *accept);
+char *_strpbrk(char *s, char *accept);
+char *_strstr(char *haystack, char *needle);
+void print_chessboard(char (*a)[8]);
+void print_diagsums(int *a, int size);
+void set_string(char **s, char *to);
 
-char *_memset(char *s, char b, unsigned int n)
-{
-	while (n)
-	{
-		s[n - 1] = b;
-		n--;
-	}
-	return (s);
+#endif
 
-}
+
